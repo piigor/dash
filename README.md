@@ -1,5 +1,8 @@
 # Dashboards de Business Intelligence - Setor de Telecomunicações
 
+<img width="2560" height="1440" alt="promotional_image_pbi" src="https://github.com/user-attachments/assets/cfcaade0-9ccc-4fbe-b3fb-e12a3bf69e62" />
+
+
 Este repositório apresenta uma série de dashboards desenvolvidos em Power BI para a gestão estratégica de operações de telecomunicações. Os relatórios focam em indicadores críticos como retenção de clientes, funil de cancelamentos e análise de churn (voluntário e involuntário).
 
 ## 📊 Dashboards Incluídos
@@ -7,7 +10,7 @@ Este repositório apresenta uma série de dashboards desenvolvidos em Power BI p
 ### 1. Funil de Cancelamentos (Operação de Retenção)
 Este dashboard permite visualizar o fluxo de solicitações de cancelamento, segmentando o que foi retido pela operação e o que seguiu para desconexão.
 *   **KPIs Principais:** Volume de cancelamentos por EPS (parceiros), taxa de portabilidade e eficácia da retenção.
-*   **Segmentação:** Visão por fornecedor (AEC, BTCC, etc.) e por motivo de saída.
+*   **Segmentação:** Visão por fornecedor e por motivo de saída.
 
 ### 2. Dashboard Pulso de Retenção
 Uma visão executiva e dinâmica da performance diária/semanal das equipes de retenção.
@@ -34,4 +37,4 @@ Os arquivos de demonstração (PDF) contidos neste repositório são representa�
 3.  As referências a sistemas internos foram generalizadas.
 
 ---
-**Desenvolvido por [Seu Nome/GitHub]**
+**Desenvolvido por Paulo Igor Pinheiro de Oliveira**
