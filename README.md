@@ -1,40 +1,94 @@
-# Dashboards de Business Intelligence - Setor de Telecomunicações
+# Dashboards de Business Intelligence para Operações de Telecomunicações
 
-<img width="2560" height="1440" alt="promotional_image_pbi" src="https://github.com/user-attachments/assets/cfcaade0-9ccc-4fbe-b3fb-e12a3bf69e62" />
+Portfólio público de dashboards desenvolvidos em Power BI para apoiar decisões de retenção, cancelamento, churn e performance operacional.
 
+> **Nota de confidencialidade:** este repositório não contém os arquivos `.pbix`, bases corporativas, consultas internas ou dados identificáveis. Os PDFs são versões públicas e anonimizadas para demonstrar a estrutura analítica, o storytelling e os tipos de decisão apoiados pelos relatórios.
 
-Este repositório apresenta uma série de dashboards desenvolvidos em Power BI para a gestão estratégica de operações de telecomunicações. Os relatórios focam em indicadores críticos como retenção de clientes, funil de cancelamentos e análise de churn (voluntário e involuntário).
+![Prévia do portfólio](https://github.com/user-attachments/assets/cfcaade0-9ccc-4fbe-b3fb-e12a3bf69e62)
 
-## 📊 Dashboards Incluídos
+## O que este portfólio demonstra
 
-### 1. Funil de Cancelamentos (Operação de Retenção)
-Este dashboard permite visualizar o fluxo de solicitações de cancelamento, segmentando o que foi retido pela operação e o que seguiu para desconexão.
-*   **KPIs Principais:** Volume de cancelamentos por EPS (parceiros), taxa de portabilidade e eficácia da retenção.
-*   **Segmentação:** Visão por fornecedor e por motivo de saída.
+- Tradução de problemas operacionais em indicadores executivos.
+- Organização de métricas de retenção, cancelamento e churn.
+- Modelagem analítica com fatos e dimensões.
+- Uso de Power Query (M) para preparação e transformação de dados.
+- Uso de DAX para medidas, taxas e análises temporais.
+- Storytelling com dados para diferentes públicos: operação, gestão e liderança.
+- Cuidados de anonimização e publicação responsável de material corporativo.
 
-### 2. Dashboard Pulso de Retenção
-Uma visão executiva e dinâmica da performance diária/semanal das equipes de retenção.
-*   **Funcionalidades:** Monitoramento de metas em tempo real, comparativo entre diferentes tecnologias (Legado vs. Fibra) e acompanhamento de performance por parceiro operacional.
+## Relatórios públicos
 
-### 3. Resultados Operacionais - Cobre e Fixo
-Análise histórica de performance focada em produtos de telefonia fixa e banda larga via cobre.
-*   **Métricas de Churn:** Comparativo entre Churn Real vs. Orçado, segmentação entre Churn Voluntário e Involuntário.
-*   **Análise Temporal:** Visão consolidada por ano, trimestre e mês, facilitando a identificação de tendências sazonais.
+| Relatório | Pergunta de negócio | Artefato |
+| --- | --- | --- |
+| **Funil de Cancelamentos** | Onde estão as perdas e quais solicitações avançam ou são retidas? | [Abrir PDF](./Funil_Cancelamento_Anonimizado.pdf) |
+| **Pulso de Retenção** | Como a operação está performando no acompanhamento diário e semanal? | [Abrir PDF](./Pulso_Retencao_Anonimizado.pdf) |
+| **Resultados Operacionais** | Como churn real, orçamento e composição da base evoluem no tempo? | [Abrir PDF](./Resultados_Operacionais_Anonimizado.pdf) |
 
-## 🛠️ Tecnologias e Técnicas Utilizadas
+## 1. Funil de Cancelamentos
 
-*   **Ferramenta:** Power BI Desktop / Service.
-*   **Modelagem de Dados:** Star Schema (Fatos e Dimensões).
-*   **DAX (Data Analysis Expressions):** Criação de medidas complexas para Time Intelligence e cálculos de taxas de churn.
-*   **Power Query (M):** ETL avançado para limpeza e transformação de dados provenientes de bases SQL e arquivos CSV.
-*   **Visualização:** Uso de funis, indicadores de ponteiro (gauges) e gráficos de barras empilhadas para facilitar a leitura executiva.
+Dashboard voltado para a operação de retenção, com visão do fluxo de solicitações de cancelamento, retenções realizadas e desconexões.
 
-## 🔒 Nota sobre Anonimização
+**Dimensões e indicadores demonstrados:**
 
-Os arquivos de demonstração (PDF) contidos neste repositório são representações visuais dos dashboards originais. Para fins de portfólio público:
-1.  Os logotipos corporativos foram removidos ou substituídos.
-2.  Os dados sensíveis de clientes e valores financeiros reais foram anonimizados ou mascarados.
-3.  As referências a sistemas internos foram generalizadas.
+- volume de solicitações;
+- resultado do atendimento;
+- taxa de retenção;
+- portabilidade;
+- fornecedor/parceiro operacional;
+- motivo de saída.
+
+**Decisão apoiada:** localizar etapas, parceiros ou motivos que exigem investigação e ação de retenção.
+
+## 2. Pulso de Retenção
+
+Visão executiva para acompanhar a performance diária e semanal das equipes de retenção.
+
+**Dimensões e indicadores demonstrados:**
+
+- acompanhamento de metas;
+- evolução temporal;
+- comparação entre tecnologias ou produtos;
+- desempenho por parceiro operacional;
+- leitura rápida de tendência e desvio.
+
+**Decisão apoiada:** priorizar acompanhamento de performance e identificar desvios antes do fechamento do período.
+
+## 3. Resultados Operacionais
+
+Relatório histórico para análise de produtos de telefonia fixa e banda larga, com foco em evolução da base e churn.
+
+**Dimensões e indicadores demonstrados:**
+
+- churn real versus orçado;
+- churn voluntário e involuntário;
+- produto/tecnologia;
+- ano, trimestre e mês;
+- tendências e sazonalidade.
+
+**Decisão apoiada:** comparar desempenho realizado e planejado, identificar mudanças de composição e orientar a investigação de tendências.
+
+## Abordagem técnica
+
+- **Ferramenta:** Power BI Desktop / Power BI Service.
+- **Modelagem:** esquema estrela com tabelas fato e dimensões.
+- **Preparação:** Power Query (M), com limpeza, padronização e transformação de fontes SQL/CSV.
+- **Métricas:** DAX, incluindo medidas de volume, taxas, comparação temporal e acompanhamento de metas.
+- **Visualização:** funil, cartões de KPI, indicadores de meta, barras empilhadas e séries temporais.
+- **Storytelling:** hierarquia visual orientada à pergunta de negócio, com separação entre visão executiva e detalhamento operacional.
+
+## Limites da publicação
+
+Os arquivos `.pbix` originais permanecem fora do repositório porque podem conter dados, consultas, nomes de tabelas, conexões, medidas, recursos visuais e metadados pertencentes ao ambiente corporativo. O portfólio público preserva o raciocínio e a apresentação sem expor informações protegidas.
+
+Para ver a descrição dos cases, decisões apoiadas e critérios de publicação, consulte [`docs/portfolio-cases.md`](./docs/portfolio-cases.md) e [`docs/publication-safety.md`](./docs/publication-safety.md).
+
+## Sobre o autor
+
+**Paulo Igor Pinheiro de Oliveira** — profissional de operações e negócios em transição para Data & AI, Analytics e automação, com experiência em Power BI, SQL, BigQuery, SAS e soluções orientadas a dados.
+
+- [LinkedIn](https://www.linkedin.com/in/paulo-igor-pinheiro-de-oliveira-93164335)
+- [GitHub](https://github.com/piigor)
 
 ---
-**Desenvolvido por Paulo Igor Pinheiro de Oliveira**
+
+Este repositório é um portfólio profissional. Os documentos públicos não representam uma autorização para reutilizar dados, marcas, regras internas ou materiais corporativos não publicados.

@@ -1,0 +1,31 @@
+# Power BI e arquivos de trabalho
+*.pbix
+*.pbit
+*.pbip
+*.pbi
+
+# Dados e exports privados
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.jsonl
+private/
+exports/
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Temporários do sistema e ferramentas
+.DS_Store
+Thumbs.db
+~$*
+*.bak
+*.tmp
+.vscode/
+.idea/
